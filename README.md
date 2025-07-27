@@ -35,7 +35,8 @@ conda activate XEmoGPT
 
 * Config file: `eval_configs/inference_config.yaml`
 
-  * Link: xxx
+  * Link: [https://pan.baidu.com/s/1k7qFDCexMVdmKUKmLmxLTg?pwd=v5n2](https://pan.baidu.com/s/1k7qFDCexMVdmKUKmLmxLTg?pwd=v5n2)
+
 
 ---
 
