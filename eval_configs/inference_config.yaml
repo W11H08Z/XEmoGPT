@@ -1,0 +1,11 @@
+model:
+  llm_path: /your/path/to/Qwen3-4B # Qwen2.5-7B-Instruct
+
+  max_context_len: 2048
+
+  lora_r: 512
+  lora_alpha: 512
+  lora_target_modules : ["q_proj", "k_proj", "v_proj"]
+  lora_dropout: 0.05
+
+  ckpt: /your/path/to/xemogpt.ckpt
