@@ -1,6 +1,6 @@
 # XEmoGPT
 
-![](./2.png)
+![Model Architecture](./2.png)
 
 ## 🧩 Environment Setup
 
