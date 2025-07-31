@@ -1,5 +1,7 @@
 # XEmoGPT
 
+![](2.png)
+
 ## 🧩 Environment Setup
 
 **Step 1: Create Conda Environment**
