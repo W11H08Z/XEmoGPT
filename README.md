@@ -1,4 +1,4 @@
-# XEmoGPT
+# XEmoGPT: An Explainable Multimodal Emotion Recognition Framework with Cue-Level Perception and Reasoning
 
 ![Model Architecture](./model.png)
 
