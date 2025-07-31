@@ -1,6 +1,6 @@
 # XEmoGPT
 
-![](2.png)
+![](./2.png)
 
 ## 🧩 Environment Setup
 
