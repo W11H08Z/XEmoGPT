@@ -69,7 +69,7 @@ class VisualTextEncoder(nn.Module):
 
         self.config = self.clip.config
 
-        # VTEB
+        # VECB
         self.visual_alignment_layer = nn.ModuleList([
             CLIPEncoderLayer(self.clip.config.vision_config)
             for _ in range(num_alignment_layers)
