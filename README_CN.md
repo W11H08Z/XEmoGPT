@@ -32,7 +32,7 @@ conda activate XEmoGPT
 **第三步：下载模型权重（checkpoint）**
 
 - 配置路径：`eval_configs/inference_config.yaml`
-  - 链接：xxx
+  - 链接：[https://pan.baidu.com/s/1k7qFDCexMVdmKUKmLmxLTg?pwd=v5n2](https://pan.baidu.com/s/1k7qFDCexMVdmKUKmLmxLTg?pwd=v5n2)
 
 
 ---
