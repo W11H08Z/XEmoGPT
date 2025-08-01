@@ -21,7 +21,7 @@ class XEmoGPT(nn.Module):
             except:
                 print(f"Error setting attribute {key} with value {value}")
 
-        # Qwen2.5-7B-Instruct, Qwen3-4B
+        # Qwen3-4B
         print("Loading LLM...")
         self.llm_model = AutoModelForCausalLM.from_pretrained(
             self.llm_path,
