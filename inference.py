@@ -37,14 +37,14 @@ if __name__ == "__main__":
     args = parse_config()
     model_cfg = load_cfg(args.cfg_path)
 
-    # HuBERT+ATEB
+    # HuBERT+AECB
     audiotext_encoder = AudioTextEncoder(
         audio_encoder_path="/your/path/to/chinese-hubert-large",
         text_encoder_path="/your/path/to/LaBSE",
         num_alignment_layers=2
     )
     audio_encoder = audiotext_encoder.audio_encoder
-    # CLIP+VTEB
+    # CLIP+VECB
     visualtext_encoder = VisualTextEncoder(
         visual_encoder_path="/your/path/to/clip-vit-large-patch14",
         num_alignment_layers=2,
