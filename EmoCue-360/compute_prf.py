@@ -124,11 +124,11 @@ def load_json_to_dict(filename):
 
 
 if __name__ == "__main__":
-    MODEL_PATH = "/18t/data/home/hanwen/dataset/zhw/model/all-MiniLM-L6-v2"
+    MODEL_PATH = "/your/path/to/all-MiniLM-L6-v2"
     model = EmoCue360(MODEL_PATH)
 
-    emer_gt_dict = load_json_to_dict("/18t/data/home/hanwen/zhw-EmoGPT-V5/evaluation_tool/gt/EMER.json")
-    rf_dict_mllm_base_emer = load_json_to_dict("/18t/data/home/hanwen/zhw-EmoGPT-V5/evaluation_tool/rf/EMER/mllm_base.json")
-    print("Visual: ", model.compute_visual_prf(rf_dict_mllm_base_emer, emer_gt_dict))
-    print("Auditory: ", model.compute_auditory_prf(rf_dict_mllm_base_emer, emer_gt_dict))
-    print("Emotional: ", model.compute_emotional_prf(rf_dict_mllm_base_emer, emer_gt_dict))
+    emer_gt_dict = load_json_to_dict("/your/path/to/EMER.json")
+    rf_dict_xemogpt_emer = load_json_to_dict("/your/path/to/XEmoGPT.json")
+    print("Visual: ", model.compute_visual_prf(rf_dict_xemogpt_emer, emer_gt_dict))
+    print("Auditory: ", model.compute_auditory_prf(rf_dict_xemogpt_emer, emer_gt_dict))
+    print("Emotional: ", model.compute_emotional_prf(rf_dict_xemogpt_emer, emer_gt_dict))
