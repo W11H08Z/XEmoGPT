@@ -18,7 +18,7 @@ class AudioEncoder(nn.Module):
         self.audio_encoder = self.audio_encoder.eval()
         self.config = self.audio_encoder.config
 
-        # ATEB
+        # AECB
         self.audio_alignment_layer = nn.ModuleList([HubertEncoderLayer(self.audio_encoder.config) for _ in range(num_alignment_layers)])
         self.audio_project = nn.Linear(self.audio_encoder.config.hidden_size, output_dim)
     
