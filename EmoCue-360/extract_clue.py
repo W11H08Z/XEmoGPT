@@ -114,9 +114,9 @@ def extract_vae_clue_from_dict(user_dict, max_workers=50):
     return result
 
 if __name__ == "__main__":
-    INPUT_PATH = "/18t/data/home/hanwen/dataset/MER2023/final-EMER-reason.csv"
+    INPUT_PATH = "/your/path/to/final-EMER-reason.csv"
     emer_dict = pd.read_csv(INPUT_PATH).set_index('name')['english'].to_dict()
     result = extract_vae_clue_from_dict(emer_dict)
 
-    OUTPUT_PATH = "/18t/data/home/hanwen/zhw-EmoGPT-V5/evaluation_tool/gt/EMER_v5.json"
+    OUTPUT_PATH = "/your/path/to/EMER.json"
     save_dict_to_json(result, OUTPUT_PATH)
