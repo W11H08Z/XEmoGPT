@@ -37,7 +37,7 @@ conda activate XEmoGPT
 
 * Config file: `eval_configs/inference_config.yaml`
 
-  * Link: [https://pan.baidu.com/s/1k7qFDCexMVdmKUKmLmxLTg?pwd=v5n2](https://pan.baidu.com/s/1k7qFDCexMVdmKUKmLmxLTg?pwd=v5n2)
+  * Link: coming soon
 
 
 ---
@@ -99,14 +99,14 @@ print("Global: ", model.compute_emotional_prf(rf_dict_xemogpt_emer, emer_gt_dict
 * **EmoCue-Instruct**
 
   * Based on MER-Caption+ with refined annotations. Only annotation files are provided; video/audio files refer to [MER2025](https://huggingface.co/datasets/MERChallenge/MER2025)
-  * Link: [https://pan.baidu.com/s/1JZ7CbXnsfEUMW0jwdEXzUA?pwd=9rh2](https://pan.baidu.com/s/1JZ7CbXnsfEUMW0jwdEXzUA?pwd=9rh2)
+  * Link: coming soon
 
 * **EmoCue-ShortCaption**
 
   * Based on [DFEW](https://dfew-dataset.github.io/download.html) and MER2025. Only annotation files are provided.
-  * Link: [https://pan.baidu.com/s/1PyQ\_LqfOM9\_ZpRBWSna6Hw?pwd=4xi7](https://pan.baidu.com/s/1PyQ_LqfOM9_ZpRBWSna6Hw?pwd=4xi7)
+  * Link: coming soon
 
 * **EmoCue-Eval**
 
   * Evaluation benchmark based on MER2025. Only annotation files are provided.
-  * Link: [https://pan.baidu.com/s/1hf7G\_DkttPmqVaA6Vtu8\_Q?pwd=6d75](https://pan.baidu.com/s/1hf7G_DkttPmqVaA6Vtu8_Q?pwd=6d75)
+  * Link: coming soon
