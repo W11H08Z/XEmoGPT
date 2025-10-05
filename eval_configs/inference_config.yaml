@@ -1,5 +1,5 @@
 model:
-  llm_path: /your/path/to/Qwen3-4B # Qwen2.5-7B-Instruct
+  llm_path: /your/path/to/Qwen3-4B
 
   max_context_len: 2048
 
