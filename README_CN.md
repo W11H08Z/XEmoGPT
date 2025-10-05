@@ -32,7 +32,7 @@ conda activate XEmoGPT
 **第三步：下载模型权重（checkpoint）**
 
 - 配置路径：`eval_configs/inference_config.yaml`
-  - 链接：[https://pan.baidu.com/s/1k7qFDCexMVdmKUKmLmxLTg?pwd=v5n2](https://pan.baidu.com/s/1k7qFDCexMVdmKUKmLmxLTg?pwd=v5n2)
+  - 链接：coming soon
 
 
 ---
@@ -85,3 +85,19 @@ print("Visual: ", model.compute_visual_prf(rf_dict_xemogpt_emer, emer_gt_dict))
 print("Auditory: ", model.compute_auditory_prf(rf_dict_xemogpt_emer, emer_gt_dict))
 print("Global: ", model.compute_emotional_prf(rf_dict_xemogpt_emer, emer_gt_dict))
 ```
+
+---
+
+## 📂 EmoCue 数据集下载
+
+- **EmoCue-Instruct**
+  - 基于 MER-Caption+ 精细标注，仅提供标注文件，音视频文件参考 [MER2025](https://huggingface.co/datasets/MERChallenge/MER2025)
+  - 链接：coming soon
+
+- **EmoCue-ShortCaption**
+  - 基于 [DFEW](https://dfew-dataset.github.io/download.html) 和 MER2025，仅提供注释文件
+  - 链接：coming soon
+- **EmoCue-Eval**
+  - 评估集，基于 MER2025 原始视频，仅提供注释文件
+  - 链接：coming soon
+
