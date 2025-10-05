@@ -33,12 +33,6 @@ conda activate XEmoGPT
   * Config file: `inference.py`
   * Link: [https://huggingface.co/openai/clip-vit-large-patch14](https://huggingface.co/openai/clip-vit-large-patch14)
 
-**Step 3: Download Checkpoint**
-
-* Config file: `eval_configs/inference_config.yaml`
-
-  * Link: coming soon
-
 
 ---
 
@@ -93,20 +87,3 @@ print("Global: ", model.compute_emotional_prf(rf_dict_xemogpt_emer, emer_gt_dict
 ```
 
 ---
-
-## 📂 EmoCue Dataset Download
-
-* **EmoCue-Instruct**
-
-  * Based on MER-Caption+ with refined annotations. Only annotation files are provided; video/audio files refer to [MER2025](https://huggingface.co/datasets/MERChallenge/MER2025)
-  * Link: coming soon
-
-* **EmoCue-ShortCaption**
-
-  * Based on [DFEW](https://dfew-dataset.github.io/download.html) and MER2025. Only annotation files are provided.
-  * Link: coming soon
-
-* **EmoCue-Eval**
-
-  * Evaluation benchmark based on MER2025. Only annotation files are provided.
-  * Link: coming soon
