@@ -9,10 +9,15 @@
 ```bash
 conda env create -f environment.yaml
 conda activate XEmoGPT
-````
+```
 
 **Step 2: Download Models and Set Paths**
 
+
+* **XEmoGPT**
+  
+  * Config file: `eval_configs/inference_config.yaml`
+  * Link: [https://pan.baidu.com/s/1LjycShaumIP3p6mzMnMU7w?pwd=9c2a](https://pan.baidu.com/s/1LjycShaumIP3p6mzMnMU7w?pwd=9c2a)
 * **Qwen3-4B**
 
   * Config file: `eval_configs/inference_config.yaml`
@@ -43,9 +48,9 @@ Run the following command in your terminal, specifying paths to the input video,
 ```bash
 python inference.py \
   --cfg-path eval_configs/inference_config.yaml \
-  --video-path [your video path] \
-  --audio-path [your audio path] \
-  --subtitle [your subtitle file]
+  --video-path assets/sample_00000007.mp4 \
+  --audio-path assets/sample_00000007.wav \
+  --subtitle "Be there or be square. Oh, okay, goodbye."
 ```
 
 ---
