@@ -9,21 +9,25 @@
 ```bash
 conda env create -f environment.yaml
 conda activate XEmoGPT
-````
+```
 
 **第二步：下载模型并配置路径**
 
+- **XEmoGPT**
+  - 配置路径：`eval_configs/inference_config.yaml`
+  - 链接：[https://pan.baidu.com/s/1LjycShaumIP3p6mzMnMU7w?pwd=9c2a](https://pan.baidu.com/s/1LjycShaumIP3p6mzMnMU7w?pwd=9c2a)
+
 - **Qwen3-4B**
-    - 配置路径：`eval_configs/inference_config.yaml`
-    - 链接：[https://huggingface.co/Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
+  - 配置路径：`eval_configs/inference_config.yaml`
+  - 链接：[https://huggingface.co/Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
 
 - **chinese-hubert-large**
-    - 配置路径：`inference.py`
-    - 链接：[https://huggingface.co/TencentGameMate/chinese-hubert-large](https://huggingface.co/TencentGameMate/chinese-hubert-large)
+  - 配置路径：`inference.py`
+  - 链接：[https://huggingface.co/TencentGameMate/chinese-hubert-large](https://huggingface.co/TencentGameMate/chinese-hubert-large)
 
 - **LaBSE**
-    - 配置路径：`inference.py`
-    - 链接：[https://huggingface.co/sentence-transformers/LaBSE](https://huggingface.co/sentence-transformers/LaBSE)
+  - 配置路径：`inference.py`
+  - 链接：[https://huggingface.co/sentence-transformers/LaBSE](https://huggingface.co/sentence-transformers/LaBSE)
 
 - **clip-vit-large-patch14**
   - 配置路径：`inference.py`
@@ -33,14 +37,14 @@ conda activate XEmoGPT
 
 ## 🎬 如何进行推理
 
-在终端运行以下命令，指定视频路径、音频路径和字幕路径：
+在终端运行以下命令，指定视频路径、音频路径和字幕文件：
 
 ```bash
 python inference.py \
   --cfg-path eval_configs/inference_config.yaml \
-  --video-path [your video path] \
-  --audio-path [your audio path] \
-  --subtitle [your subtitle file]
+  --video-path assets/sample_00000007.mp4 \
+  --audio-path assets/sample_00000007.wav \
+  --subtitle "Be there or be square. Oh, okay, goodbye."
 ```
 
 ---
@@ -55,7 +59,7 @@ python inference.py \
 
 ### 使用流程
 
-#### Step 1: 抽取情感线索（extract\_clue.py）
+#### Step 1: 抽取情感线索（extract_clue.py）
 
 ```python
 INPUT_PATH = "/your/path/to/final-EMER-reason.csv"
@@ -66,7 +70,7 @@ OUTPUT_PATH = "/your/path/to/output.json"
 save_dict_to_json(result, OUTPUT_PATH)
 ```
 
-#### Step 2: 计算PRF指标（compute\_prf.py）
+#### Step 2: 计算 PRF 指标（compute_prf.py）
 
 ```python
 MODEL_PATH = "/your/path/to/all-MiniLM-L6-v2"
@@ -79,5 +83,3 @@ print("Visual: ", model.compute_visual_prf(rf_dict_xemogpt_emer, emer_gt_dict))
 print("Auditory: ", model.compute_auditory_prf(rf_dict_xemogpt_emer, emer_gt_dict))
 print("Global: ", model.compute_emotional_prf(rf_dict_xemogpt_emer, emer_gt_dict))
 ```
-
-
