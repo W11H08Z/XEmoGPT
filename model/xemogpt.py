@@ -331,5 +331,5 @@ class XEmoGPT(nn.Module):
         if ckpt_path:
             print("Loading Checkpoint: {}".format(ckpt_path))
             ckpt = torch.load(ckpt_path, map_location="cpu")
-            model.load_state_dict(ckpt["state_dict"], strict=False)  
+            model.load_state_dict(ckpt, strict=False)  
         return model
